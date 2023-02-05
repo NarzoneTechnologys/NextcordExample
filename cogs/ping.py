@@ -14,10 +14,10 @@ class Ping(commands.Cog, name="Bot"):
     async def ping(self, interaction: nextcord.Interaction):
         
         embed = nextcord.Embed(
-            title="GobelBot",
+            title="NextcordBot",
             description=f"**Ping: `{round(self.bot.latency * 1000)}`ms**"
         )
-        embed.set_footer(text="GobelBot",icon_url=self.bot.user.display_avatar)
+        embed.set_footer(text="NextcordBot",icon_url=self.bot.user.display_avatar)
         await interaction.send(embed=embed)
         
         
